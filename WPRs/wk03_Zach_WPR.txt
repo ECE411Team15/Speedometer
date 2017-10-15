@@ -2,8 +2,20 @@ Zach Stamler
 
 Weekly report -- Week 3
 
-What did you do?
+DONE:
 
-What problems found?
+- Created breakout dev board for individual pin access of MCU
+- Ordered cable and connectors for sensor module
+- Created folder structure for GitHub page.
+- Researched possible battery choices.
 
-Steps to Take
+ISSUES:
+
+- The pins of the MCU are very small. It's roughly dime-sized and there are 48 pins. The routed dev board came out looking clean but it will be difficult to solder the chip onto it, and the traces might have a tendency to lift.
+- I'm worried that a coin battery that we were hoping to use may not be able to source enough current to power the screen and the MCU.
+- It seems clear that the sensors we're looking at need to run at 3.3V or greater, otherwise they have a tendency to drop out and lose range.
+
+ACTION ITEMS:
+
+- (ongoing) Find a suitable power arrangement. I'd like to have overhead voltage available and regulate it down to 3.3V if possible. This will result in the best performance over a longer time frame.
+- (ongoing) Think about various form factor issues, e.g. an enclosure for the hall effect sensors, how to mount screen above PCB, how things mount to an enclosure in general.
