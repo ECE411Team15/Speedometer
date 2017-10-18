@@ -1,1 +1,22 @@
-week 3 report
+Week 3 Report - Linyi Hong
+
+Done:
+1.Search OP Amps may use for later (Can work at 3.3V)
+  option: Manufacturer Part Number: NJM2136M
+          https://www.digikey.com/products/en/integrated-circuits-ics/linear-amplifiers-instrumentation-op-amps-buffer-amps/687?k=amp&k=&pkeyword=amp&FV=ffe002af%2C1140003%2Ca4c00cb%2Ca4c00fd%2Ca4c00fe&mnonly=0&ColumnSort=0&page=1&stock=1&quantity=0&ptm=0&fid=0&pageSize=25
+
+2.Search some optional screen
+  option: a.With button:
+            Manufacturer Part Number: SHIELD-LCD-16X2
+            https://www.digikey.com/product-detail/en/SHIELD-LCD-16X2/1188-1134-ND/4696332?WT.mc_id=IQ_7595_G_pla4696332&wt.srch=1&wt.medium=cpc&WT.srch=1&gclid=EAIaIQobChMI7tnRovDu1gIVCqlpCh3RfAhyEAQYASABEgJ2D_D_BwE
+          b.Without button:
+            Manufacturer Part Number: NHD-C0216CZ-FSW-FBW-3V3
+            https://www.digikey.com/product-detail/en/newhaven-display-intl/NHD-C0216CZ-FSW-FBW-3V3/NHD-C0216CZ-FSW-FBW-3V3-ND/2059234
+
+Issue:
+1.Choose the screen with button seems not easier than just buy one LCD screen and put the button at MCU's GPIO.
+2.How can we interface the MCU quickly?
+
+Action:
+1.Try to find some ways to flash the MCU.
+2.Try to find a smallest circuit tree to setup the MCU.
