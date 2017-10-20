@@ -1,6 +1,21 @@
 Andrew Capatina
-
+Week of 10/11/2017
 
 1.) Bought development kit.
 2.) Bought LCD display. Will update BOM.
 3.) Researched tools/board needed.
+
+Next Week:
+10/18/2017
+
+  1.) Set up development board.
+    a.) Will be using a push button led program to quickly get code working.
+  2.) Set up interface to LCD display.
+    a.) STMcube mx makes this a lot easier than it seems...
+
+
+Issues:
+
+  1.) I mistakenly bought the MCU at first and didn't realize how valuable
+      the development kit would be for this project.
+  
