@@ -5446,6 +5446,13 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <sheets>
 <sheet>
 <plain>
+<wire x1="256.54" y1="190.5" x2="256.54" y2="121.92" width="0.1524" layer="97"/>
+<wire x1="256.54" y1="121.92" x2="381" y2="121.92" width="0.1524" layer="97"/>
+<wire x1="381" y1="121.92" x2="381" y2="190.5" width="0.1524" layer="97"/>
+<wire x1="381" y1="190.5" x2="256.54" y2="190.5" width="0.1524" layer="97"/>
+<text x="304.8" y="185.42" size="2.1844" layer="97">Pinheader for  Serial Wire Debug (SWD) interface.</text>
+<text x="327.66" y="170.18" size="1.778" layer="97">This is a 4-pin push button. We can updated 
+this when we decide on a button we want to use.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5458,8 +5465,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="R5" gate="G$1" x="304.8" y="127"/>
 <instance part="R6" gate="G$1" x="304.8" y="154.94"/>
 <instance part="R7" gate="G$1" x="304.8" y="134.62"/>
-<instance part="R8" gate="G$1" x="266.7" y="170.18" rot="R90"/>
-<instance part="R9" gate="G$1" x="259.08" y="170.18" rot="R90"/>
+<instance part="R8" gate="G$1" x="274.32" y="170.18" rot="R90"/>
+<instance part="R9" gate="G$1" x="266.7" y="170.18" rot="R90"/>
 <instance part="R10" gate="G$1" x="297.18" y="76.2"/>
 <instance part="S1" gate="G$1" x="345.44" y="165.1"/>
 <instance part="GND1" gate="1" x="373.38" y="160.02"/>
@@ -5467,8 +5474,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="P+1" gate="1" x="289.56" y="182.88"/>
 <instance part="GND2" gate="1" x="353.06" y="139.7"/>
 <instance part="GND3" gate="1" x="320.04" y="139.7"/>
-<instance part="+3V2" gate="G$1" x="266.7" y="182.88"/>
-<instance part="+3V3" gate="G$1" x="259.08" y="182.88"/>
+<instance part="+3V2" gate="G$1" x="274.32" y="182.88"/>
+<instance part="+3V3" gate="G$1" x="266.7" y="182.88"/>
 </instances>
 <busses>
 </busses>
@@ -5535,12 +5542,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="180.34" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="180.34" x2="266.7" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="266.7" y1="175.26" x2="266.7" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="175.26" x2="274.32" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5564,11 +5571,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="299.72" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="127" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PA14/USART2_TX/SWCLK"/>
-<wire x1="284.48" y1="144.78" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="144.78" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="144.78" x2="231.14" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="165.1" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="144.78" x2="231.14" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="165.1" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5594,11 +5601,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="299.72" y1="134.62" x2="287.02" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="134.62" x2="287.02" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PA13/SWDIO"/>
-<wire x1="287.02" y1="147.32" x2="266.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="147.32" x2="274.32" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="266.7" y1="147.32" x2="231.14" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="165.1" x2="266.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="147.32" x2="231.14" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="165.1" x2="274.32" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5627,6 +5634,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
