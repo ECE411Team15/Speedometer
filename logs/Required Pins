@@ -1,0 +1,24 @@
+List of the required pins for MCU
+format: pinname - brief reason
+
+MCU: STM32F072-LQFP48
+
+pin7(NRST) - reset
+pin8(VSSA) - Analog ground
+pin9(VDDA) - Analog power supply
+pin23(VSS) - Ground
+pin24(VDD) - Power supply
+pin34(SWDIO) - SWD interface
+pin35(VSS) - Ground
+pin37(SWCLK) - SWD interface
+pin44(BOOT0) - Boot memory selection
+
+
+
+
+
+
+
+
+
+
