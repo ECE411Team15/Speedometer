@@ -1,0 +1,24 @@
+Zach Stamler
+
+Weekly report -- Week 4
+
+DONE:
+
+-Started schematic with Nathan.
+-Added switched power reg circuit, MCU power scheme, sensor input circuit to schematic.
+-Tested a power button timing circuit in LTSpice and added to schematic.
+-Began custom Eagle parts library, will mostly be using SMD parts in 0805 form factor.
+-Received single connector set/cable for sensor module.
+
+ISSUES:
+
+-Don't know how we're going to mount the button(s)/screen to the enclosure yet.
+-Coin battery way underpowered for the needs of this device. Are researching alternate solution.
+
+ACTION ITEMS:
+
+- Verify pwr button circuit in the lab.
+- Decipher MCU pinout connections using document created by Andrew/Linyi, implement in schematic.
+- Decide on an input switch arrangement, figure out mounting.
+- (ongoing) Find a suitable power arrangement. Need >4V. If we're using rechargeable LIon, need to figure that implementation out ASAP (charge controller/charging method).
+- (ongoing) Think about various form factor issues, e.g. an enclosure for the hall effect sensors, how to mount screen above PCB, how things mount to an enclosure in general.
