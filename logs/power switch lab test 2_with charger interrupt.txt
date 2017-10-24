@@ -1,0 +1,7 @@
+*Refer to images 'device_off_CHG_pwr_applied' and 'device_on_CHG_pwr_applied'.
+
+CH3 trace is output of power switch circuit (device ON/OFF state). CH2 is secondary voltage applied, IE the voltage from the charging power input. CH1 is output of the logic, which connects to the EN input of the DC-to-DC converter, enabling device power. Note, when device is in OFF state and power is applied, device power is not enabled ('device_off_CHG_pwr_applied'). When device is on ON state, applied charge power disables device, and device turns back on when power is removed ('device_on_CHG_pwr_applied').
+
+Pullup resistors are extremely important to ensure proper operation.
+
+-ZS
