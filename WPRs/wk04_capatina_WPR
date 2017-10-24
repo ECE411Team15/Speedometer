@@ -2,14 +2,19 @@ Andrew Capatina
 Week of 10/18/2017
 
 1.) Have set up a working push button program to turn on an LED on the development board.
-2.)
+2.) Set up MCU pinout.
+3.) Bought and received ST V2 emulator/programmer.
 
 Next Week:
 10/25/2017
 
+1.) Write high level algorithm for user interface.
+2.) Program LCD to display Hello World Program.
 
 
 
 Issues:
 
 1.) Need to figure out how we will be uploading code to the MCU which we will be using for our PCB.
+  a.) issue resolved.
+
