@@ -7183,22 +7183,22 @@ this when we decide on a button we want to use.</text>
 <text x="163.83" y="203.2" size="1.016" layer="97">Aim for ~2.0uA @ min 1.65 max 3.6V. These should work well</text>
 <text x="163.83" y="201.93" size="1.016" layer="97">with max 6.1V from the battery across all charge ranges.</text>
 <text x="163.83" y="200.66" size="1.016" layer="97">(See datasheet 'en.DM00091510.pdf' p. 60/128 for more info)</text>
-<text x="358.14" y="81.28" size="1.778" layer="97">This Vcc and GND
+<text x="358.14" y="83.82" size="1.778" layer="97">This Vcc and GND
 is optional for the
 backlight. Not every
 LCD has a backlight.</text>
-<text x="283.21" y="69.85" size="1.778" layer="97">Potentiometer
+<text x="283.21" y="72.39" size="1.778" layer="97">Potentiometer
 for adjusting
 screen contrast.</text>
-<wire x1="381" y1="93.98" x2="381" y2="59.69" width="0.1524" layer="97"/>
-<wire x1="381" y1="59.69" x2="281.94" y2="59.69" width="0.1524" layer="97"/>
-<wire x1="281.94" y1="59.69" x2="281.94" y2="93.98" width="0.1524" layer="97"/>
-<wire x1="281.94" y1="93.98" x2="322.58" y2="93.98" width="0.1524" layer="97"/>
-<text x="283.21" y="95.25" size="2.1844" layer="97">LCD Display 16x1 pinheader</text>
-<wire x1="322.58" y1="93.98" x2="381" y2="93.98" width="0.1524" layer="97"/>
-<wire x1="281.94" y1="93.98" x2="281.94" y2="97.79" width="0.1524" layer="97"/>
-<wire x1="281.94" y1="97.79" x2="322.58" y2="97.79" width="0.1524" layer="97"/>
-<wire x1="322.58" y1="97.79" x2="322.58" y2="93.98" width="0.1524" layer="97"/>
+<wire x1="381" y1="96.52" x2="381" y2="62.23" width="0.1524" layer="97"/>
+<wire x1="381" y1="62.23" x2="281.94" y2="62.23" width="0.1524" layer="97"/>
+<wire x1="281.94" y1="62.23" x2="281.94" y2="96.52" width="0.1524" layer="97"/>
+<wire x1="281.94" y1="96.52" x2="322.58" y2="96.52" width="0.1524" layer="97"/>
+<text x="283.21" y="97.79" size="2.1844" layer="97">LCD Display 16x1 pinheader</text>
+<wire x1="322.58" y1="96.52" x2="381" y2="96.52" width="0.1524" layer="97"/>
+<wire x1="281.94" y1="96.52" x2="281.94" y2="100.33" width="0.1524" layer="97"/>
+<wire x1="281.94" y1="100.33" x2="322.58" y2="100.33" width="0.1524" layer="97"/>
+<wire x1="322.58" y1="100.33" x2="322.58" y2="96.52" width="0.1524" layer="97"/>
 <wire x1="203.2" y1="68.58" x2="233.68" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="233.68" y1="68.58" x2="259.08" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="259.08" y1="68.58" x2="259.08" y2="7.62" width="0.1524" layer="97"/>
@@ -7282,11 +7282,11 @@ screen contrast.</text>
 <instance part="GND15" gate="1" x="35.56" y="33.02"/>
 <instance part="H6" gate="G$1" x="22.86" y="49.53" rot="R180"/>
 <instance part="H7" gate="G$1" x="22.86" y="40.64" rot="R180"/>
-<instance part="+3V9" gate="G$1" x="307.34" y="85.09"/>
-<instance part="+3V10" gate="G$1" x="370.84" y="77.47"/>
-<instance part="GND4" gate="1" x="307.34" y="69.85"/>
-<instance part="GND16" gate="1" x="370.84" y="69.85"/>
-<instance part="TM1" gate="G$1" x="307.34" y="77.47"/>
+<instance part="+3V9" gate="G$1" x="307.34" y="87.63"/>
+<instance part="+3V10" gate="G$1" x="370.84" y="80.01"/>
+<instance part="GND4" gate="1" x="307.34" y="72.39"/>
+<instance part="GND16" gate="1" x="370.84" y="72.39"/>
+<instance part="TM1" gate="G$1" x="307.34" y="80.01"/>
 <instance part="S3" gate="G$1" x="228.6" y="26.67"/>
 <instance part="GND17" gate="1" x="252.73" y="15.24"/>
 <instance part="R10" gate="G$1" x="255.27" y="57.15" rot="R270"/>
@@ -7295,7 +7295,7 @@ screen contrast.</text>
 <instance part="R21" gate="G$1" x="228.6" y="57.15" rot="R270"/>
 <instance part="R22" gate="G$1" x="219.71" y="57.15" rot="R270"/>
 <instance part="+3V11" gate="G$1" x="237.49" y="67.31"/>
-<instance part="JP2" gate="A" x="334.01" y="67.31" rot="MR270"/>
+<instance part="JP2" gate="A" x="334.01" y="69.85" rot="MR270"/>
 </instances>
 <busses>
 </busses>
@@ -7444,15 +7444,15 @@ screen contrast.</text>
 </segment>
 <segment>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="318.77" y1="69.85" x2="318.77" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="318.77" y1="82.55" x2="307.34" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="318.77" y1="72.39" x2="318.77" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="318.77" y1="85.09" x2="307.34" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="TM1" gate="G$1" pin="E"/>
-<junction x="307.34" y="82.55"/>
+<junction x="307.34" y="85.09"/>
 <pinref part="JP2" gate="A" pin="2"/>
 </segment>
 <segment>
-<wire x1="351.79" y1="69.85" x2="351.79" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="351.79" y1="74.93" x2="370.84" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="351.79" y1="72.39" x2="351.79" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="351.79" y1="77.47" x2="370.84" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <pinref part="JP2" gate="A" pin="15"/>
 </segment>
@@ -7661,17 +7661,17 @@ screen contrast.</text>
 <pinref part="H7" gate="G$1" pin="MOUNT"/>
 </segment>
 <segment>
-<wire x1="316.23" y1="69.85" x2="316.23" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="316.23" y1="72.39" x2="316.23" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="316.23" y1="72.39" x2="307.34" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="316.23" y1="74.93" x2="307.34" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="TM1" gate="G$1" pin="A"/>
-<junction x="307.34" y="72.39"/>
+<junction x="307.34" y="74.93"/>
 <pinref part="JP2" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="354.33" y1="69.85" x2="354.33" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="354.33" y1="72.39" x2="354.33" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="354.33" y1="72.39" x2="370.84" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="354.33" y1="74.93" x2="370.84" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="16"/>
 </segment>
 <segment>
@@ -7851,8 +7851,8 @@ screen contrast.</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="TM1" gate="G$1" pin="S"/>
-<wire x1="312.42" y1="77.47" x2="321.31" y2="77.47" width="0.1524" layer="91"/>
-<wire x1="321.31" y1="77.47" x2="321.31" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="80.01" x2="321.31" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="321.31" y1="80.01" x2="321.31" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="3"/>
 </segment>
 </net>
@@ -7860,7 +7860,7 @@ screen contrast.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="PA3/ADC_IN3/COMP2_INP/USART2_RX"/>
 <wire x1="256.54" y1="172.72" x2="323.85" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="323.85" y1="172.72" x2="323.85" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="323.85" y1="172.72" x2="323.85" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="4"/>
 </segment>
 </net>
@@ -7868,7 +7868,7 @@ screen contrast.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="PA4/ADC_IN4/DAC_OUT1"/>
 <wire x1="256.54" y1="170.18" x2="326.39" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="326.39" y1="170.18" x2="326.39" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="326.39" y1="170.18" x2="326.39" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="5"/>
 </segment>
 </net>
@@ -7876,7 +7876,7 @@ screen contrast.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="PA5/ADC_IN5/DAC_OUT2/SPI1_SCK"/>
 <wire x1="256.54" y1="167.64" x2="328.93" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="328.93" y1="167.64" x2="328.93" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="328.93" y1="167.64" x2="328.93" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="6"/>
 </segment>
 </net>
@@ -7884,7 +7884,7 @@ screen contrast.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="PA6/ADC_IN6/SPI1_MISO/TIM3_CH1"/>
 <wire x1="256.54" y1="165.1" x2="331.47" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="331.47" y1="165.1" x2="331.47" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="331.47" y1="165.1" x2="331.47" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="7"/>
 </segment>
 </net>
@@ -7892,7 +7892,7 @@ screen contrast.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="PA7/ADC_IN7/SPI1_MOSI/TIM3_CH2"/>
 <wire x1="256.54" y1="162.56" x2="334.01" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="334.01" y1="162.56" x2="334.01" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="334.01" y1="162.56" x2="334.01" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="8"/>
 </segment>
 </net>
@@ -7900,14 +7900,14 @@ screen contrast.</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="PB0/ADC_IN8/TIM3_CH3"/>
 <wire x1="256.54" y1="134.62" x2="336.55" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="336.55" y1="134.62" x2="336.55" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="336.55" y1="134.62" x2="336.55" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB1/ADC_IN9/TIM3_CH4"/>
-<wire x1="339.09" y1="69.85" x2="339.09" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="339.09" y1="72.39" x2="339.09" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="339.09" y1="132.08" x2="256.54" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="10"/>
 </segment>
@@ -7915,7 +7915,7 @@ screen contrast.</text>
 <net name="N$21" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB2"/>
-<wire x1="341.63" y1="69.85" x2="341.63" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="341.63" y1="72.39" x2="341.63" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="341.63" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="11"/>
 </segment>
@@ -7923,7 +7923,7 @@ screen contrast.</text>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB10/I2C2_SCL/TIM2_CH3/USART3_TX"/>
-<wire x1="344.17" y1="69.85" x2="344.17" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="344.17" y1="72.39" x2="344.17" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="344.17" y1="109.22" x2="256.54" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="12"/>
 </segment>
@@ -7931,7 +7931,7 @@ screen contrast.</text>
 <net name="N$23" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB11/I2C2_SDA/TIM2_C4/USART3_RX"/>
-<wire x1="346.71" y1="69.85" x2="346.71" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="346.71" y1="72.39" x2="346.71" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="346.71" y1="106.68" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="13"/>
 </segment>
@@ -7939,7 +7939,7 @@ screen contrast.</text>
 <net name="N$24" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB12"/>
-<wire x1="349.25" y1="69.85" x2="349.25" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="349.25" y1="72.39" x2="349.25" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="349.25" y1="104.14" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="14"/>
 </segment>

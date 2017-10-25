@@ -1,0 +1,3 @@
+Actual power off switching time ~2.2s (could use trimmer instead of 330k resistor to vary this). Hold time and power off voltage are very sensitive to choice of diode. Using 1N4148, off voltage is ~9mV (this is fine). Draws roughly 100uA into a 100kOhm load. The enable IP of the voltage converter is probably much higher impedance than this, so it should draw less on the PCB. Shot of scope in images folder.
+
+-ZS
