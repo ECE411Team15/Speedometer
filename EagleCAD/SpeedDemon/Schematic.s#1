@@ -10298,7 +10298,6 @@ shape!</text>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
@@ -10529,7 +10528,6 @@ Hall Effect Speedometer</text>
 <instance part="R2" gate="G$1" x="312.42" y="228.6" rot="R90"/>
 <instance part="R3" gate="G$1" x="297.18" y="236.22" rot="R90"/>
 <instance part="R4" gate="G$1" x="289.56" y="236.22" rot="R90"/>
-<instance part="R5" gate="G$1" x="365.76" y="205.74" rot="R90"/>
 <instance part="R6" gate="G$1" x="304.8" y="223.52"/>
 <instance part="R7" gate="G$1" x="360.68" y="213.36" rot="R90"/>
 <instance part="R8" gate="G$1" x="274.32" y="236.22" rot="R90"/>
@@ -10614,7 +10612,7 @@ Hall Effect Speedometer</text>
 <instance part="R28" gate="G$1" x="53.34" y="232.41" rot="R180"/>
 <instance part="GND21" gate="1" x="60.96" y="227.33"/>
 <instance part="C16" gate="G$1" x="29.21" y="200.66" rot="R270"/>
-<instance part="Q2" gate="G$1" x="40.6146" y="73.66"/>
+<instance part="Q2" gate="G$1" x="40.6146" y="74.295"/>
 <instance part="R29" gate="G$1" x="34.925" y="81.28" rot="R180"/>
 <instance part="GND15" gate="1" x="54.5846" y="62.865"/>
 <instance part="R30" gate="G$1" x="27.9146" y="72.39" rot="R270"/>
@@ -10824,26 +10822,19 @@ Hall Effect Speedometer</text>
 <wire x1="289.56" y1="243.84" x2="289.56" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="340.36" y1="223.52" x2="365.76" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="223.52" x2="365.76" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="FL_SWCLK" class="0">
 <segment>
-<wire x1="365.76" y1="200.66" x2="365.76" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="PA14/USART2_TX/SWCLK"/>
 <wire x1="365.76" y1="198.12" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="198.12" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="144.78" x2="256.54" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="231.14" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
 <junction x="281.94" y="198.12"/>
 <label x="284.48" y="177.8" size="1.778" layer="95" rot="R90"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="340.36" y1="223.52" x2="365.76" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="223.52" x2="365.76" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11078,11 +11069,11 @@ Hall Effect Speedometer</text>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="63.5" y1="69.85" x2="66.04" y2="69.85" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="27.9146" y1="67.31" x2="43.1546" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="54.5846" y1="67.31" x2="43.18" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="43.18" y1="67.31" x2="54.5846" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="43.1546" y1="68.58" x2="43.1546" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="43.1546" y1="67.31" x2="43.18" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="67.31" x2="27.9146" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="67.31" x2="43.18" y2="69.215" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="69.215" x2="43.1546" y2="69.215" width="0.1524" layer="91"/>
 <junction x="43.18" y="67.31"/>
 </segment>
 <segment>
@@ -11412,7 +11403,7 @@ Hall Effect Speedometer</text>
 <pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="40.005" y1="81.28" x2="43.1546" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="43.1546" y1="81.28" x2="43.1546" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="43.1546" y1="81.28" x2="43.1546" y2="79.375" width="0.1524" layer="91"/>
 <wire x1="43.1546" y1="81.28" x2="54.5846" y2="81.28" width="0.1524" layer="91"/>
 <junction x="43.1546" y="81.28"/>
 <pinref part="R31" gate="G$1" pin="1"/>
@@ -11486,7 +11477,7 @@ Hall Effect Speedometer</text>
 <net name="+V+_CHG" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="35.5346" y1="71.12" x2="35.5346" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="35.5346" y1="71.755" x2="35.5346" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="35.5346" y1="77.47" x2="27.9146" y2="77.47" width="0.1524" layer="91"/>
 <junction x="27.9146" y="77.47"/>
