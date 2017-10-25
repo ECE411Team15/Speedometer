@@ -73,7 +73,7 @@
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
-<description>Generic 0805 SMD package</description>
+<description>Speed Demon discrete passives - SMD packages</description>
 <packages>
 <package name="L_0805">
 <description>&lt;b&gt;Inductor 0805&lt;/b&gt;&lt;p&gt;
