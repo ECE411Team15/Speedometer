@@ -10291,7 +10291,7 @@ shape!</text>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value=" "/>
 <part name="U4" library="stm32f0" deviceset="STM32F072" device="-LQFP48"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X5" device="" package3d_urn="urn:adsk.eagle:package:22470/2"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
@@ -10422,7 +10422,6 @@ this when we decide on a button we want to use.</text>
 <wire x1="93.98" y1="57.15" x2="93.98" y2="7.62" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="97"/>
 <text x="8.89" y="58.42" size="2.1844" layer="97">Power supply/reg</text>
-<text x="0" y="262.89" size="1.778" layer="97">*BT1 is a generic battery--we may need to add charging circuitry</text>
 <wire x1="7.62" y1="62.23" x2="33.02" y2="62.23" width="0.1524" layer="97"/>
 <wire x1="33.02" y1="62.23" x2="33.02" y2="57.15" width="0.1524" layer="97"/>
 <wire x1="33.02" y1="57.15" x2="7.62" y2="57.15" width="0.1524" layer="97"/>
@@ -10545,7 +10544,7 @@ Hall Effect Speedometer</text>
 <instance part="+3V3" gate="G$1" x="281.94" y="246.38"/>
 <instance part="GND5" gate="1" x="22.86" y="12.7"/>
 <instance part="GND6" gate="1" x="76.2" y="12.7"/>
-<instance part="+3V4" gate="G$1" x="108.585" y="246.38"/>
+<instance part="+3V4" gate="G$1" x="106.045" y="246.38"/>
 <instance part="L1" gate="G$1" x="15.24" y="25.4" rot="R180"/>
 <instance part="C1" gate="G$1" x="66.04" y="38.1"/>
 <instance part="C2" gate="G$1" x="76.2" y="43.18"/>
@@ -10615,7 +10614,7 @@ Hall Effect Speedometer</text>
 <instance part="R28" gate="G$1" x="53.34" y="232.41" rot="R180"/>
 <instance part="GND21" gate="1" x="60.96" y="227.33"/>
 <instance part="C16" gate="G$1" x="29.21" y="200.66" rot="R270"/>
-<instance part="Q2" gate="G$1" x="40.6146" y="73.66"/>
+<instance part="Q2" gate="G$1" x="40.6146" y="74.295"/>
 <instance part="R29" gate="G$1" x="34.925" y="81.28" rot="R180"/>
 <instance part="GND15" gate="1" x="54.5846" y="62.865"/>
 <instance part="R30" gate="G$1" x="27.9146" y="72.39" rot="R270"/>
@@ -10634,10 +10633,10 @@ Hall Effect Speedometer</text>
 <instance part="VBATT+1" gate="G$1" x="66.04" y="53.34" smashed="yes">
 <attribute name="VALUE" x="61.595" y="53.975" size="1.778" layer="96"/>
 </instance>
-<instance part="VBATT_SW1" gate="G$1" x="100.33" y="242.57" smashed="yes">
-<attribute name="VALUE" x="98.425" y="229.235" size="1.778" layer="96" rot="R90"/>
+<instance part="VBATT_SW1" gate="G$1" x="97.79" y="242.57" smashed="yes">
+<attribute name="VALUE" x="95.885" y="229.235" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="VBATT+2" gate="G$1" x="92.71" y="246.38"/>
+<instance part="VBATT+2" gate="G$1" x="91.44" y="246.38"/>
 <instance part="VBATT+3" gate="G$1" x="15.24" y="148.59"/>
 <instance part="VBATT+4" gate="G$1" x="154.94" y="214.63"/>
 <instance part="R32" gate="G$1" x="90.17" y="22.86" rot="R270"/>
@@ -10723,9 +10722,7 @@ Hall Effect Speedometer</text>
 <wire x1="15.24" y1="48.26" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="48.26" x2="76.2" y2="51.435" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="51.435" x2="106.045" y2="51.435" width="0.1524" layer="91"/>
-<wire x1="106.045" y1="51.435" x2="106.045" y2="189.865" width="0.1524" layer="91"/>
-<wire x1="106.045" y1="189.865" x2="108.585" y2="189.865" width="0.1524" layer="91"/>
-<wire x1="108.585" y1="189.865" x2="108.585" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="106.045" y1="51.435" x2="106.045" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="45.72" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
 <junction x="76.2" y="48.26"/>
@@ -11081,11 +11078,11 @@ Hall Effect Speedometer</text>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="63.5" y1="69.85" x2="66.04" y2="69.85" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="27.9146" y1="67.31" x2="43.1546" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="54.5846" y1="67.31" x2="43.18" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="43.18" y1="67.31" x2="54.5846" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="43.1546" y1="68.58" x2="43.1546" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="43.1546" y1="67.31" x2="43.18" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="67.31" x2="27.9146" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="67.31" x2="43.18" y2="69.215" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="69.215" x2="43.1546" y2="69.215" width="0.1524" layer="91"/>
 <junction x="43.18" y="67.31"/>
 </segment>
 <segment>
@@ -11137,11 +11134,14 @@ Hall Effect Speedometer</text>
 <pinref part="S3" gate="G$1" pin="CENTER"/>
 <wire x1="210.82" y1="26.67" x2="198.755" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="198.755" y1="26.67" x2="198.755" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="198.755" y1="64.77" x2="97.155" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="97.155" y1="64.77" x2="97.155" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="77.47" y1="144.78" x2="97.155" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="198.755" y1="64.77" x2="99.695" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="99.695" y1="64.77" x2="99.695" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="99.695" y1="92.71" x2="88.9" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="92.71" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="144.78" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
 <junction x="77.47" y="144.78"/>
-<label x="96.52" y="135.89" size="1.4224" layer="95" rot="R90"/>
+<label x="90.805" y="136.525" size="1.4224" layer="95" rot="R90"/>
+<label x="197.485" y="66.675" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -11412,7 +11412,7 @@ Hall Effect Speedometer</text>
 <pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="40.005" y1="81.28" x2="43.1546" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="43.1546" y1="81.28" x2="43.1546" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="43.1546" y1="81.28" x2="43.1546" y2="79.375" width="0.1524" layer="91"/>
 <wire x1="43.1546" y1="81.28" x2="54.5846" y2="81.28" width="0.1524" layer="91"/>
 <junction x="43.1546" y="81.28"/>
 <pinref part="R31" gate="G$1" pin="1"/>
@@ -11469,7 +11469,7 @@ Hall Effect Speedometer</text>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="107.95" x2="60.96" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="107.95" x2="60.96" y2="115.57" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="107.95" x2="66.04" y2="107.95" width="0.1524" layer="91"/>
 <junction x="60.96" y="107.95"/>
 <pinref part="Q1" gate="G$1" pin="D2"/>
@@ -11478,15 +11478,15 @@ Hall Effect Speedometer</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="106.68" x2="60.96" y2="107.95" width="0.1524" layer="91"/>
 <junction x="60.96" y="107.95"/>
-<wire x1="60.96" y1="118.11" x2="100.33" y2="118.11" width="0.1524" layer="91"/>
-<wire x1="100.33" y1="118.11" x2="100.33" y2="240.03" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="115.57" x2="97.79" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="97.79" y1="115.57" x2="97.79" y2="240.03" width="0.1524" layer="91"/>
 <pinref part="VBATT_SW1" gate="G$1" pin="VBATT+_SW"/>
 </segment>
 </net>
 <net name="+V+_CHG" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="35.5346" y1="71.12" x2="35.5346" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="35.5346" y1="71.755" x2="35.5346" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="35.5346" y1="77.47" x2="27.9146" y2="77.47" width="0.1524" layer="91"/>
 <junction x="27.9146" y="77.47"/>
@@ -11542,8 +11542,8 @@ Hall Effect Speedometer</text>
 <wire x1="27.94" y1="181.61" x2="33.02" y2="181.61" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="181.61" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
 <junction x="33.02" y="193.04"/>
-<wire x1="33.02" y1="181.61" x2="92.71" y2="181.61" width="0.1524" layer="91"/>
-<wire x1="92.71" y1="181.61" x2="92.71" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="181.61" x2="91.44" y2="181.61" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="181.61" x2="91.44" y2="243.84" width="0.1524" layer="91"/>
 <junction x="33.02" y="181.61"/>
 <pinref part="VBATT+2" gate="G$1" pin="VBATT+"/>
 </segment>
