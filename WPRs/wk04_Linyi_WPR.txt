@@ -1,0 +1,1 @@
+Linyi HongWeek 4 ReportWhat I do:Find out ways to flash the chip. Issue:Unsure the circuit tree related to the SWD partAction:Find out more information about how to connect the ST-link V2 and the MCU
