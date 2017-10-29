@@ -13,10 +13,11 @@ Next Week:
 1.) Get a working prototype going for the mph conversion algorithm. 
 2.) Get mph displaying on lcd screen.
     a.) Need to write functions which write/read to LCD display.
-3.) Begin HW4
+3.) Finish HW4
 4.) Get a document review meeting together so we may discuss the schedule. 
 
 Issues:
 
 1.) Need to figure out how to pass known state (flag) between interrupt handler and main. 
     a.) Shouldn't be hard to solve, just need to dedicate time to it.  
+2.) Need to download project management tools form cat website.
