@@ -1,0 +1,23 @@
+Andrew Capatina
+Week of 10/25/2017
+
+1.) As mentioned in the issues of the last WPR, I have pushed out writing the high level algorithm.
+    a.) It is also better for me to push out the algorithm so I may focus on having a basic prototype working.
+2.) Programmed interrupts in test program. 
+    Tested interrupts with a push button, works as expected.
+3.) Wired a working prototype. Will now be able to easily work on the code at home. 
+
+Next Week:
+11/1/2
+
+1.) Get a working prototype going for the mph conversion algorithm. 
+2.) Get mph displaying on lcd screen.
+    a.) Need to write functions which write/read to LCD display.
+3.) Begin HW4
+4.) Begin 
+
+Issues:
+
+1.) Need to figure out how to pass known state (flag) between interrupt handler and main. 
+    a.) Shouldn't be hard to solve, just need to dedicate time to it. 
+2.) 
