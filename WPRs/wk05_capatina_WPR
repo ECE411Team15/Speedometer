@@ -19,5 +19,4 @@ Next Week:
 Issues:
 
 1.) Need to figure out how to pass known state (flag) between interrupt handler and main. 
-    a.) Shouldn't be hard to solve, just need to dedicate time to it. 
-2.) 
+    a.) Shouldn't be hard to solve, just need to dedicate time to it.  
