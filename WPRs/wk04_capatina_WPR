@@ -12,9 +12,9 @@ Next Week:
 2.) Program LCD to display Hello World Program.
 
 
-
 Issues:
 
 1.) Need to figure out how we will be uploading code to the MCU which we will be using for our PCB.
   a.) issue resolved.
-
+2.) I have needed to push out writing the algorithm because I have focused my time on getting the basics to work with our development board.
+    This includes having the sensor, button, and talking to the MCU.
