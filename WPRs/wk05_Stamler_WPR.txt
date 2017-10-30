@@ -1,0 +1,20 @@
+Zach Stamler
+
+Weekly report -- Week 4
+
+DONE:
+
+-Decided on rechargeable polymer Li-Ion power scheme with integrated charge controller, USB power inlet
+-Finished schematic draft
+-Simulated and built/tested power-on circuit and plugged-in power interrupt logic circuit.
+
+ISSUES:
+
+-Not sure about possible IP issues with planned sensor enclosure
+-Worried about water resistance/chassis weatherproofing
+-Would like to implement software controlled 'low battery' indication
+
+ACTION ITEMS:
+
+- Finalize schematic
+- (ongoing) Think about various form factor issues, e.g. an enclosure for the hall effect sensors, how to mount screen above PCB, how things mount to an enclosure in general.
