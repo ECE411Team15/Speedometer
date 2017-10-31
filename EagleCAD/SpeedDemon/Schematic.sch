@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8954,6 +8954,34 @@ Metric Code Size 2012</description>
 <rectangle x1="0.2" y1="-0.6" x2="0.5" y2="0.6" layer="51"/>
 <rectangle x1="0.2" y1="-0.55" x2="0.5" y2="0.6" layer="21"/>
 </package>
+<package name="CRYSTAL_OSC_3.2X1.5">
+<smd name="P$1" x="1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
+<smd name="P$2" x="-1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
+<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.75" x2="0.6" y2="0.75" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.75" x2="-0.6" y2="-0.75" width="0.127" layer="21"/>
+<text x="-1.8" y="1.15" size="0.6096" layer="21">&gt;NAME</text>
+<text x="-1.85" y="-1.45" size="0.3048" layer="21">ECS-.327-CDX-1293</text>
+</package>
+<package name="C_0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -8982,6 +9010,28 @@ Metric Code Size 2012</description>
 <wire x1="1.016" y1="4.064" x2="0.254" y2="4.064" width="0.254" layer="94"/>
 <wire x1="1.016" y1="4.064" x2="1.016" y2="3.302" width="0.254" layer="94"/>
 </symbol>
+<symbol name="CRYSTAL_OSC">
+<wire x1="-1.27" y1="3.81" x2="-1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short"/>
+<text x="-5.08" y="5.08" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-6.35" size="1.016" layer="94">ECS-.327-CDX-1293</text>
+</symbol>
+<symbol name="C-US">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1N4148_SOD_123" prefix="D">
@@ -9009,6 +9059,43 @@ Metric Code Size 2012</description>
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC2292CT-ND" prefix="X" uservalue="yes">
+<description>32.768KHz crystal oscillator with 5ppm tolerance (~.0005% error)&lt;p&gt;
+
+
+Part name is Digi-key part #. Mfr. Part # is ECS-.327-CDX-1293</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL_OSC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL_OSC_3.2X1.5">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C_0805_NP" prefix="C" uservalue="yes">
+<description>generic capacitor in 0805 package</description>
+<gates>
+<gate name="G$1" symbol="C-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C_0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10405,6 +10492,10 @@ shape!</text>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="100nF"/>
 <part name="U1A" library="US5881" deviceset="US5881" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="X1" library="LCRD_SMD_generics" deviceset="XC2292CT-ND" device=""/>
+<part name="C6" library="LCRD_SMD_generics" deviceset="C_0805_NP" device="" value="22pF"/>
+<part name="C18" library="LCRD_SMD_generics" deviceset="C_0805_NP" device="" value="22pF"/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10520,6 +10611,15 @@ Mini XLR-M chassis mount conn</text>
 Hall Effect Speedometer</text>
 <text x="344.17" y="20.32" size="2.1844" layer="97">Main PCB</text>
 <text x="119.38" y="5.715" size="1.27" layer="97">See p. 2 for sensor module schematic</text>
+<wire x1="111.76" y1="71.12" x2="149.86" y2="71.12" width="0.1524" layer="97"/>
+<wire x1="149.86" y1="71.12" x2="149.86" y2="106.68" width="0.1524" layer="97"/>
+<wire x1="149.86" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="97"/>
+<wire x1="129.54" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="97"/>
+<wire x1="111.76" y1="106.68" x2="111.76" y2="71.12" width="0.1524" layer="97"/>
+<text x="113.03" y="107.95" size="2.1844" layer="97">Crystal Osc</text>
+<wire x1="111.76" y1="106.68" x2="111.76" y2="111.76" width="0.1524" layer="97"/>
+<wire x1="111.76" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="97"/>
+<wire x1="129.54" y1="111.76" x2="129.54" y2="106.68" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10640,6 +10740,10 @@ Hall Effect Speedometer</text>
 <instance part="VBATT+4" gate="G$1" x="154.94" y="214.63"/>
 <instance part="R32" gate="G$1" x="90.17" y="22.86" rot="R270"/>
 <instance part="GND22" gate="1" x="90.17" y="12.065"/>
+<instance part="X1" gate="G$1" x="137.16" y="91.44" rot="R90"/>
+<instance part="C6" gate="G$1" x="121.92" y="99.06" rot="R90"/>
+<instance part="C18" gate="G$1" x="121.92" y="83.82" rot="R90"/>
+<instance part="GND8" gate="1" x="116.84" y="74.93"/>
 </instances>
 <busses>
 </busses>
@@ -11082,6 +11186,16 @@ Hall Effect Speedometer</text>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="90.17" y1="17.78" x2="90.17" y2="14.605" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="83.82" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="116.84" y1="83.82" x2="116.84" y2="77.47" width="0.1524" layer="91"/>
+<junction x="116.84" y="83.82"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -11172,9 +11286,7 @@ Hall Effect Speedometer</text>
 <wire x1="148.59" y1="31.75" x2="148.59" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="31.75" x2="156.845" y2="31.75" width="0.1524" layer="91"/>
 <label x="155.575" y="74.93" size="1.27" layer="95" rot="R90"/>
-<wire x1="156.845" y1="31.75" x2="156.845" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="PC14/OSC32_IN"/>
-<wire x1="156.845" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="156.845" y1="31.75" x2="156.845" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -11561,6 +11673,30 @@ Hall Effect Speedometer</text>
 <wire x1="154.94" y1="212.09" x2="154.94" y2="209.55" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="VBATT+4" gate="G$1" pin="VBATT+"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PC15/OSC32_OUT"/>
+<wire x1="162.56" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="96.52" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="83.82" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<junction x="137.16" y="83.82"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PC14/OSC32_IN"/>
+<wire x1="162.56" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="99.06" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
+<junction x="137.16" y="99.06"/>
 </segment>
 </net>
 </nets>
