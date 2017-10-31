@@ -1,0 +1,14 @@
+Linyi Hong
+Weekly Report
+
+What I do:
+1) Prepare a simple version project schedule for the project.
+2) Search using internal MCU clock or external crystal oscillator, and their differences.
+
+
+Next:
+1) Write the userprogram.
+2) Help Andrew to write the code to display information on LCD.
+
+Issue:
+Not sure the frequency and its accuracy for this project, which decide to use external clock or internal clock.
