@@ -10793,9 +10793,9 @@ screen contrast.</text>
 <wire x1="322.58" y1="97.79" x2="322.58" y2="93.98" width="0.1524" layer="97"/>
 <wire x1="201.295" y1="68.58" x2="247.65" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="247.65" y1="68.58" x2="259.08" y2="68.58" width="0.1524" layer="97"/>
-<wire x1="259.08" y1="68.58" x2="259.08" y2="22.86" width="0.1524" layer="97"/>
-<wire x1="259.08" y1="22.86" x2="201.295" y2="22.86" width="0.1524" layer="97"/>
-<wire x1="201.295" y1="22.86" x2="201.295" y2="68.58" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="68.58" x2="259.08" y2="17.78" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="17.78" x2="201.295" y2="17.78" width="0.1524" layer="97"/>
+<wire x1="201.295" y1="17.78" x2="201.295" y2="68.58" width="0.1524" layer="97"/>
 <text x="203.835" y="69.85" size="2.1844" layer="97">5-Way Tactile Switch Pinheader</text>
 <wire x1="201.295" y1="68.58" x2="201.295" y2="73.66" width="0.1524" layer="97"/>
 <wire x1="201.295" y1="73.66" x2="247.65" y2="73.66" width="0.1524" layer="97"/>
@@ -10845,6 +10845,12 @@ Hall Effect Speedometer</text>
 <wire x1="111.76" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="97"/>
 <wire x1="129.54" y1="111.76" x2="129.54" y2="106.68" width="0.1524" layer="97"/>
 <text x="132.08" y="102.87" size="1.778" layer="97">32.768kHz</text>
+<text x="236.22" y="27.94" size="1.778" layer="97" rot="R90" align="bottom-right">CENTER
+LEFT
+RIGHT
+DOWN
+UP
+GND</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -11961,13 +11967,19 @@ Balanced Console Cable or similar
 (tie gnd to cable shield)</text>
 <text x="192.405" y="223.52" size="1.6764" layer="97">*NOTE: No PCB for this portion of circuit! Use point-to-point wiring.</text>
 <wire x1="69.85" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="97"/>
-<wire x1="116.84" y1="134.62" x2="116.84" y2="97.79" width="0.1524" layer="97"/>
-<wire x1="116.84" y1="97.79" x2="69.85" y2="97.79" width="0.1524" layer="97"/>
-<wire x1="69.85" y1="97.79" x2="69.85" y2="134.62" width="0.1524" layer="97"/>
+<wire x1="116.84" y1="134.62" x2="116.84" y2="90.17" width="0.1524" layer="97"/>
+<wire x1="116.84" y1="90.17" x2="69.85" y2="90.17" width="0.1524" layer="97"/>
+<wire x1="69.85" y1="90.17" x2="69.85" y2="134.62" width="0.1524" layer="97"/>
 <text x="71.12" y="135.89" size="1.9304" layer="97">5-Way Tactile Switch Breakout Board</text>
 <wire x1="69.85" y1="134.62" x2="69.85" y2="139.7" width="0.1524" layer="97"/>
 <wire x1="69.85" y1="139.7" x2="116.84" y2="139.7" width="0.1524" layer="97"/>
 <wire x1="116.84" y1="139.7" x2="116.84" y2="134.62" width="0.1524" layer="97"/>
+<text x="100.33" y="100.33" size="1.778" layer="97" rot="R90" align="bottom-right">CENTER
+LEFT
+RIGHT
+DOWN
+UP
+GND</text>
 </plain>
 <instances>
 <instance part="GND23" gate="1" x="281.305" y="173.355"/>

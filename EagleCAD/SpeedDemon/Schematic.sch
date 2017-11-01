@@ -11517,9 +11517,13 @@ GND</text>
 <junction x="148.59" y="31.75"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="148.59" y1="31.75" x2="148.59" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="148.59" y1="31.75" x2="156.845" y2="31.75" width="0.1524" layer="91"/>
-<label x="155.575" y="74.93" size="1.27" layer="95" rot="R90"/>
-<wire x1="156.845" y1="31.75" x2="156.845" y2="83.82" width="0.1524" layer="91"/>
+<label x="159.385" y="74.93" size="1.27" layer="95" rot="R90"/>
+<wire x1="148.59" y1="31.75" x2="160.02" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="31.75" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="88.9" x2="260.35" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="PB13/SPI2_SCK/I2C2_SCL"/>
+<wire x1="260.35" y1="88.9" x2="260.35" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="260.35" y1="101.6" x2="256.54" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
