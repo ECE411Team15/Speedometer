@@ -10378,6 +10378,9 @@ GND</text>
 <text x="119.38" y="77.47" size="0.8128" layer="97">Use high drive mode on STM32</text>
 <text x="119.38" y="76.2" size="0.8128" layer="97">Chip clock runs on x8 freq multiplication</text>
 <text x="218.44" y="21.59" size="0.8128" layer="97" rot="R90">See p.2 for switch connections</text>
+<text x="26.035" y="180.34" size="1.778" layer="97">+</text>
+<text x="26.67" y="175.26" size="1.778" layer="97">-</text>
+<text x="12.065" y="182.88" size="1.778" layer="97">JST-PH Connector</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
