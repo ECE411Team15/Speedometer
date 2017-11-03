@@ -164,9 +164,9 @@ L.H.
 A.C.</text>
 <text x="3.45" y="4.25" size="0.6096" layer="21" rot="R90">Board Sw.1
 Team 15</text>
-<hole x="2" y="2" drill="3"/>
+<hole x="3.15" y="2" drill="3"/>
 <hole x="16.5" y="2" drill="3"/>
-<hole x="15.5" y="14.5" drill="3"/>
+<hole x="16" y="13" drill="3"/>
 <hole x="3.5" y="11" drill="3"/>
 </plain>
 <libraries>

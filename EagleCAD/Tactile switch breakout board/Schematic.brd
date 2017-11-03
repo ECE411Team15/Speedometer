@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -158,7 +158,7 @@
 <wire x1="18.5" y1="0.05" x2="18.5" y2="21.5" width="0" layer="20"/>
 <wire x1="18.5" y1="21.5" x2="0" y2="21.5" width="0" layer="20"/>
 <wire x1="0" y1="21.5" x2="0" y2="0" width="0" layer="20"/>
-<text x="16.55" y="4.25" size="0.8128" layer="21">N.D.
+<text x="16" y="4.2" size="0.8128" layer="21">N.D.
 Z.S.
 L.H.
 A.C.</text>
@@ -413,6 +413,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
