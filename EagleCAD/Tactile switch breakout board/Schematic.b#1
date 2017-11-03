@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -164,10 +164,10 @@ L.H.
 A.C.</text>
 <text x="3.85" y="4.55" size="0.6096" layer="21" rot="R90">Board Sw.1
 Team 15</text>
-<hole x="4.15" y="2.25" drill="3"/>
-<hole x="14.5" y="2.2" drill="3"/>
-<hole x="14.4" y="12.2" drill="3"/>
-<hole x="3.95" y="12.275" drill="3"/>
+<hole x="4" y="2" drill="3"/>
+<hole x="14.5" y="2" drill="3"/>
+<hole x="14.5" y="12" drill="3"/>
+<hole x="4" y="12" drill="3"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -341,7 +341,7 @@ Datasheet</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="osh-park-2-layers-design-rules *">
+<designrules name="LaenPCBOrder">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -355,9 +355,9 @@ Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
 <param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
@@ -367,10 +367,10 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="15mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="10mil"/>
+<param name="msDrill" value="13mil"/>
 <param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -529,9 +529,9 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$2">
 <contactref element="S1" pad="CTR"/>
 <contactref element="JP1" pad="6"/>
-<wire x1="6.95191875" y1="9.54305" x2="6.05191875" y2="10.44808125" width="0.381" layer="1"/>
-<wire x1="6.05191875" y1="10.44808125" x2="6.05" y2="13.45" width="0.381" layer="1"/>
-<wire x1="6.05" y1="13.45" x2="3.04" y2="16.45496875" width="0.381" layer="1"/>
+<wire x1="6.95191875" y1="9.54305" x2="6.15191875" y2="10.29808125" width="0.381" layer="1"/>
+<wire x1="6.15191875" y1="10.29808125" x2="6.15" y2="13.35" width="0.381" layer="1"/>
+<wire x1="6.15" y1="13.35" x2="3.04" y2="16.45496875" width="0.381" layer="1"/>
 <wire x1="3.04" y1="16.45496875" x2="3.04" y2="18.48" width="0.381" layer="1"/>
 </signal>
 <signal name="N$1">
