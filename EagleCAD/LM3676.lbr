@@ -76,6 +76,7 @@
 <text x="-1.95" y="0.95" size="0.254" layer="21">1</text>
 <text x="-1.55" y="1.75" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1.65" y="-2" size="0.254" layer="27">&gt;VALUE</text>
+<smd name="P$1" x="0" y="0" dx="1.6" dy="2" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -113,7 +114,7 @@ Created by Nathaniel Dusciuc (10/20/2017) for ECE411.</description>
 <connect gate="G$1" pin="FB" pad="FB"/>
 <connect gate="G$1" pin="MODE" pad="MODE"/>
 <connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="PGND" pad="PGND"/>
+<connect gate="G$1" pin="PGND" pad="P$1 PGND"/>
 <connect gate="G$1" pin="SGND" pad="SGND"/>
 <connect gate="G$1" pin="SW" pad="SW"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
