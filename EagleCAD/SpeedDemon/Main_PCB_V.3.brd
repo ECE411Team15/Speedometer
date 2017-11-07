@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -3010,7 +3010,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="53.5" y1="16.8" x2="52.95" y2="16.25" width="0.25" layer="1"/>
 <wire x1="52.95" y1="16.25" x2="52.95" y2="15.6" width="0.25" layer="1"/>
 <via x="65.5" y="43.25" extent="1-16" drill="0.35"/>
-<via x="35.5" y="9.25" extent="1-16" drill="0.35"/>
 <via x="71.25" y="7.5" extent="1-16" drill="0.35"/>
 <via x="25.5" y="33" extent="1-16" drill="0.35"/>
 <via x="25.5" y="31" extent="1-16" drill="0.35"/>
