@@ -1,0 +1,20 @@
+Andrew Capatina 
+Week of 11/1/2017
+
+1.) Got a working prototype of the speed conversion algorithm. I am able to calculate the change in time
+    from one pulse to the next of the hall effect sesnor using Input Capture Mode.
+2.) Finished Project Schedule.
+3.) Developed low level algorithm for edge detection.
+
+Next Week:
+11/8/2017
+
+1.) Refine speed conversion algorithm program.
+2.) Finish block diagram homework assignment. (HW5)
+3.) Write algorithms for LCD.
+
+Issues:
+1.) Need to dedicate time to get LCD working. 
+  a.) This is my highest priority concern. We will be ready to integrate the functionality of 
+  the peripherals once this is finished. 
+

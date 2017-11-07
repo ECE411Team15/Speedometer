@@ -1,0 +1,21 @@
+Zach Stamler
+
+Weekly report -- Week 6
+
+DONE:
+
+-Finished schematic.
+-Finished and ordered breakout boards for the tactile switch.
+-Assembled BOM for less easily-aqcuired components (ie not resistors caps, and diodes) for prototyping/subcircuit verification.
+-Finished draft PCB layout. 
+
+ISSUES:
+
+-Andrew C says we'll need to change some pinouts on the MCU, this will change the schematic and the layout.
+-Need to debate adequacy of top-layer ground plane with Nathan (I think it's fine as-is, he does not).
+
+ACTION ITEMS:
+
+-Meet with Nathan re top ground plane. Finish board layout for Thursday.
+-Find out about Andrew's changes to MCU pinout.
+-Order prototyping parts.
