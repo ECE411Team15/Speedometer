@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.000003125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5740,6 +5740,7 @@ Metric Code Size 2012</description>
 <wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.127" layer="51"/>
 <wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
 <wire x1="-0.2" y1="0.2" x2="-0.2" y2="-0.2" width="0.127" layer="21"/>
+<text x="-0.889" y="0.508" size="0.4064" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -6563,6 +6564,8 @@ Created by Nathaniel Dusciuc (10/20/2017) for ECE411.</description>
 <part name="C21" library="0805_generics" deviceset="C_0805_NP" device="" value="4.7uF"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D4" library="LCRD_SMD_generics" deviceset="CFSH05_SCHOTTKY" device=""/>
+<part name="R6" library="0805_generics" deviceset="R_0805" device="" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6780,10 +6783,10 @@ if voltages out of range for AND gate.</text>
 <attribute name="VALUE" x="52.6946" y="73.255" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="R29" gate="G$1" x="34.925" y="81.28" rot="R180"/>
-<instance part="GND15" gate="1" x="60.4846" y="62.865"/>
+<instance part="GND15" gate="1" x="60.420496875" y="62.88636875"/>
 <instance part="R30" gate="G$1" x="36.2146" y="72.39" rot="R270"/>
-<instance part="R31" gate="G$1" x="58.0846" y="74.93" rot="R270"/>
-<instance part="U2" gate="G$1" x="77.47" y="74.93"/>
+<instance part="R31" gate="G$1" x="55.5846" y="75.249159375" rot="R270"/>
+<instance part="U2" gate="G$1" x="79.72" y="74.93"/>
 <instance part="VBATT_SW2" gate="G$1" x="144.145" y="52.705" smashed="yes">
 <attribute name="VALUE" x="133.35" y="53.34" size="1.778" layer="96"/>
 </instance>
@@ -6824,10 +6827,12 @@ if voltages out of range for AND gate.</text>
 <instance part="L1" gate="G$1" x="15.24" y="25.4"/>
 <instance part="R2" gate="G$1" x="17.97" y="77.4746"/>
 <instance part="C17" gate="G$1" x="23.46" y="73.64"/>
-<instance part="D3" gate="G$1" x="50.2" y="67" rot="R270"/>
-<instance part="C21" gate="G$1" x="40.21" y="67.14"/>
-<instance part="GND23" gate="1" x="50.2346" y="61.365"/>
+<instance part="D3" gate="G$1" x="50.174359375" y="67" rot="R270"/>
+<instance part="C21" gate="G$1" x="40.240771875" y="67.14"/>
+<instance part="GND23" gate="1" x="50.173346875" y="61.31158125"/>
 <instance part="GND28" gate="1" x="15.7346" y="66.615"/>
+<instance part="D4" gate="G$1" x="59.52564375" y="80.32808125"/>
+<instance part="R6" gate="G$1" x="63.3346" y="74.999159375" rot="R270"/>
 </instances>
 <busses>
 <bus name="LCD_4_RS,LCD_5_R/W,LCD_6_EN,LCD_7_DB0,LCD_8_DB1,LCD_9_DB2,LCD_10_DB3,LCD_11_DB4,LCD_12_DB5,LCD_13_DB6,LCD_14_DB7">
@@ -7247,15 +7252,23 @@ if voltages out of range for AND gate.</text>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="60.4846" y1="69.81" x2="60.4846" y2="65.405" width="0.1524" layer="91"/>
+<wire x1="60.41905625" y1="69.850828125" x2="60.420496875" y2="65.42636875" width="0.1524" layer="91"/>
 <pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="58.0846" y1="69.85" x2="60.4846" y2="69.81" width="0.1524" layer="91"/>
-<junction x="60.4846" y="69.81"/>
-<junction x="60.4846" y="69.81"/>
-<wire x1="60.4846" y1="69.81" x2="62.6" y2="69.81" width="0.1524" layer="91"/>
-<wire x1="62.6" y1="69.81" x2="63.1" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="55.5846" y1="70.169159375" x2="55.578178125" y2="70.169159375" width="0.1524" layer="91"/>
+<wire x1="55.578178125" y1="70.169159375" x2="55.578178125" y2="69.856375" width="0.1524" layer="91"/>
+<wire x1="55.578178125" y1="69.856375" x2="60.41905625" y2="69.850828125" width="0.1524" layer="91"/>
+<junction x="60.41905625" y="69.850828125"/>
+<junction x="60.41905625" y="69.850828125"/>
+<wire x1="60.41905625" y1="69.850828125" x2="62.45161875" y2="69.854253125" width="0.1524" layer="91"/>
+<wire x1="62.45161875" y1="69.854253125" x2="62.26755625" y2="69.854253125" width="0.1524" layer="91"/>
+<wire x1="62.26755625" y1="69.854253125" x2="62.4159375" y2="69.84921875" width="0.1524" layer="91"/>
+<wire x1="62.4159375" y1="69.84921875" x2="63.1" y2="69.85" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="63.1" y1="69.85" x2="66.04" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="63.1" y1="69.85" x2="68.29" y2="69.85" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="63.3346" y1="69.919159375" x2="64.5846" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="64.5846" y1="69.85" x2="68.29" y2="69.85" width="0.1524" layer="91"/>
+<junction x="68.29" y="69.85"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
@@ -7354,15 +7367,15 @@ if voltages out of range for AND gate.</text>
 </segment>
 <segment>
 <pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="40.21" y1="62.06" x2="49.5" y2="62.06" width="0.1524" layer="91"/>
-<wire x1="49.5" y1="62.06" x2="49.5" y2="63.75" width="0.1524" layer="91"/>
+<wire x1="40.240771875" y1="62.06" x2="47.869140625" y2="62.06" width="0.1524" layer="91"/>
+<wire x1="47.869140625" y1="62.06" x2="47.869140625" y2="63.75" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="49.5" y1="63.75" x2="50.2346" y2="63.75" width="0.1524" layer="91"/>
-<wire x1="50.2346" y1="63.75" x2="50.2346" y2="63.905" width="0.1524" layer="91"/>
+<wire x1="47.869140625" y1="63.75" x2="50.1690125" y2="63.75" width="0.1524" layer="91"/>
+<wire x1="50.1690125" y1="63.75" x2="50.173346875" y2="63.85158125" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="50.2" y1="64.46" x2="50.2346" y2="64.46" width="0.1524" layer="91"/>
-<wire x1="50.2346" y1="64.46" x2="50.2346" y2="63.905" width="0.1524" layer="91"/>
-<junction x="50.2346" y="63.905"/>
+<wire x1="50.174359375" y1="64.46" x2="50.17449375" y2="64.46" width="0.1524" layer="91"/>
+<wire x1="50.17449375" y1="64.46" x2="50.173346875" y2="63.85158125" width="0.1524" layer="91"/>
+<junction x="50.173346875" y="63.85158125"/>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
@@ -7661,28 +7674,30 @@ if voltages out of range for AND gate.</text>
 <wire x1="40.005" y1="81.28" x2="50.1546" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="50.1546" y1="81.28" x2="50.1546" y2="80.875" width="0.1524" layer="91"/>
-<wire x1="50.1546" y1="81.28" x2="58.0846" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="50.1546" y1="81.28" x2="55.5846" y2="81.28" width="0.1524" layer="91"/>
 <junction x="50.1546" y="81.28"/>
 <pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="58.0846" y1="81.28" x2="58.0846" y2="80.01" width="0.1524" layer="91"/>
-<wire x1="58.0846" y1="81.28" x2="62.19" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="62.19" y1="81.28" x2="62.19" y2="74.93" width="0.1524" layer="91"/>
-<junction x="58.0846" y="81.28"/>
-<pinref part="U2" gate="G$1" pin="B"/>
-<wire x1="62.19" y1="74.93" x2="66.04" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="55.5846" y1="81.28" x2="55.5846" y2="80.329159375" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="55.5846" y1="80.329159375" x2="56.71" y2="80.329159375" width="0.1524" layer="91"/>
+<wire x1="56.71" y1="80.329159375" x2="56.98564375" y2="80.32808125" width="0.1524" layer="91"/>
+<junction x="55.5846" y="80.329159375"/>
 </segment>
 </net>
 <net name="BATT_CHG_LOGIC_OP" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="Y"/>
-<wire x1="88.9" y1="69.85" x2="90.17" y2="69.85" width="0.1524" layer="91"/>
 <label x="90.805" y="47.625" size="1.27" layer="95" rot="R270"/>
 <wire x1="82.55" y1="29.845" x2="82.55" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="29.845" x2="90.17" y2="29.845" width="0.1524" layer="91"/>
 <pinref part="R32" gate="G$1" pin="1"/>
 <wire x1="90.17" y1="29.845" x2="90.17" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="90.17" y1="29.845" x2="90.17" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="90.17" y1="29.845" x2="90.16719375" y2="61.235096875" width="0.1524" layer="91"/>
+<wire x1="90.16719375" y1="61.235096875" x2="92.25" y2="61.235096875" width="0.1524" layer="91"/>
+<wire x1="92.25" y1="61.235096875" x2="92.25" y2="62.75" width="0.1524" layer="91"/>
+<wire x1="92.25" y1="62.75" x2="92.263846875" y2="69.85021875" width="0.1524" layer="91"/>
+<wire x1="92.263846875" y1="69.85021875" x2="91.15" y2="69.85" width="0.1524" layer="91"/>
 <junction x="90.17" y="29.845"/>
 <pinref part="U3" gate="G$1" pin="EN"/>
 </segment>
@@ -7703,15 +7718,15 @@ if voltages out of range for AND gate.</text>
 <wire x1="27.94" y1="81.28" x2="29.845" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="81.28" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
 <junction x="27.94" y="81.28"/>
-<wire x1="27.94" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="86.36" x2="63.5" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="86.36" x2="67" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="67" y1="86.36" x2="67" y2="80.01" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="A"/>
-<wire x1="63.5" y1="80.01" x2="66.04" y2="80.01" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="86.36" x2="90.17" y2="86.36" width="0.1524" layer="91"/>
-<junction x="63.5" y="86.36"/>
-<wire x1="90.17" y1="86.36" x2="90.17" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="67" y1="80.01" x2="68.29" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="67" y1="86.36" x2="92.67" y2="86.36" width="0.1524" layer="91"/>
+<junction x="67" y="86.36"/>
+<wire x1="92.67" y1="86.36" x2="92.67" y2="80.01" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="90.17" y1="80.01" x2="88.9" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="92.67" y1="80.01" x2="91.15" y2="80.01" width="0.1524" layer="91"/>
 <pinref part="VBATT_SW4" gate="G$1" pin="VBATT+_SW"/>
 <wire x1="20.955" y1="81.28" x2="20.955" y2="85.725" width="0.1524" layer="91"/>
 </segment>
@@ -7729,6 +7744,7 @@ if voltages out of range for AND gate.</text>
 <wire x1="60.96" y1="115.57" x2="97.79" y2="115.57" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="115.57" x2="97.79" y2="240.03" width="0.1524" layer="91"/>
 <pinref part="VBATT_SW1" gate="G$1" pin="VBATT+_SW"/>
+<label x="60.96" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+V+_CHG" class="0">
@@ -8025,18 +8041,30 @@ if voltages out of range for AND gate.</text>
 <net name="N$16" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="50.1546" y1="69.54" x2="50.2" y2="69.54" width="0.1524" layer="91"/>
-<wire x1="50.2" y1="69.68" x2="50.2" y2="69.54" width="0.1524" layer="91"/>
+<wire x1="50.1546" y1="69.54" x2="50.174359375" y2="69.54" width="0.1524" layer="91"/>
+<wire x1="50.2" y1="69.68" x2="50.174359375" y2="69.54" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="40.21" y1="69.68" x2="40.25" y2="69.68" width="0.1524" layer="91"/>
+<wire x1="40.240771875" y1="69.68" x2="40.25" y2="69.68" width="0.1524" layer="91"/>
 <wire x1="40.25" y1="69.68" x2="40.25" y2="70.25" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <wire x1="40.25" y1="70.25" x2="50.1546" y2="70.25" width="0.1524" layer="91"/>
 <wire x1="50.1546" y1="70.25" x2="50.1546" y2="70.715" width="0.1524" layer="91"/>
-<wire x1="50.2" y1="69.54" x2="50.2" y2="70.715" width="0.1524" layer="91"/>
-<wire x1="50.2" y1="70.715" x2="50.1546" y2="70.715" width="0.1524" layer="91"/>
-<junction x="50.2" y="69.54"/>
+<wire x1="50.174359375" y1="69.54" x2="50.1643875" y2="70.715" width="0.1524" layer="91"/>
+<wire x1="50.1643875" y1="70.715" x2="50.1546" y2="70.715" width="0.1524" layer="91"/>
+<junction x="50.174359375" y="69.54"/>
 <junction x="50.1546" y="70.715"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="62.06564375" y1="80.32808125" x2="63.3346" y2="80.32808125" width="0.1524" layer="91"/>
+<wire x1="63.3346" y1="80.32808125" x2="63.3346" y2="80.079159375" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="B"/>
+<wire x1="63.3346" y1="80.079159375" x2="65.79" y2="80.079159375" width="0.1524" layer="91"/>
+<wire x1="65.79" y1="80.079159375" x2="68.29" y2="74.93" width="0.1524" layer="91"/>
+<junction x="63.3346" y="80.079159375"/>
 </segment>
 </net>
 </nets>
