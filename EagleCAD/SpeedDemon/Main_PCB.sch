@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.000003125" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5487,7 +5487,6 @@ Metric Code Size 2012</description>
 <smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<circle x="-1.13" y="-1.51" radius="0.022359375" width="0.1" layer="21"/>
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.1" layer="51"/>
@@ -5500,6 +5499,7 @@ Metric Code Size 2012</description>
 <wire x1="-1.5" y1="-0.8" x2="-1.3" y2="-0.8" width="0.1" layer="21"/>
 <text x="-1.5" y="1.8" size="0.6096" layer="21" font="vector">&gt;NAME</text>
 <text x="-1.6" y="-2.4" size="0.6096" layer="21" font="vector">&gt;VALUE</text>
+<circle x="-1.2" y="-0.5" radius="0.14141875" width="0.127" layer="21"/>
 </package>
 <package name="TO-236">
 <smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
@@ -5524,7 +5524,6 @@ NMOS</text>
 <smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<circle x="-1.13" y="-1.51" radius="0.022359375" width="0.1" layer="21"/>
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.1" layer="51"/>
@@ -5676,12 +5675,11 @@ AND gate</text>
 <wire x1="1.3" y1="-0.7" x2="-1.3" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="-1.3" y1="-0.7" x2="-1.3" y2="0.7" width="0.127" layer="51"/>
 <wire x1="-1.3" y1="0.7" x2="1.3" y2="0.7" width="0.127" layer="51"/>
-<rectangle x1="0.5" y1="-0.7" x2="1.1" y2="0.7" layer="51"/>
-<wire x1="-1.3" y1="0.7" x2="1.3" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="-0.7" x2="1.3" y2="-0.7" width="0.127" layer="21"/>
-<rectangle x1="0.5" y1="-0.7" x2="1.1" y2="0.7" layer="21"/>
 <text x="-2.1" y="0.9" size="0.8128" layer="21">&gt;NAME</text>
 <text x="-2.1" y="-1.7" size="0.8128" layer="21">1N4148</text>
+<rectangle x1="0.4" y1="-0.7" x2="0.6" y2="0.7" layer="21"/>
+<wire x1="-1.3" y1="0.7" x2="1.3" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.7" x2="-1.3" y2="-0.7" width="0.127" layer="21"/>
 </package>
 <package name="LED_0805">
 <description>&lt;b&gt;0805 resistor package&lt;/b&gt;&lt;p&gt;
@@ -5690,11 +5688,13 @@ Metric Code Size 2012</description>
 <wire x1="0.925" y1="-0.6" x2="-0.925" y2="-0.6" width="0.1016" layer="51"/>
 <smd name="1" x="-1" y="0" dx="1.3" dy="1.6" layer="1"/>
 <smd name="2" x="1" y="0" dx="1.3" dy="1.6" layer="1"/>
-<text x="-1.65" y="0.925" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.65" y="1.125" size="0.8128" layer="25">&gt;NAME</text>
 <rectangle x1="-1" y1="-0.65" x2="-0.5" y2="0.65" layer="51"/>
 <rectangle x1="0.5" y1="-0.65" x2="1" y2="0.65" layer="51"/>
 <rectangle x1="0.2" y1="-0.6" x2="0.5" y2="0.6" layer="51"/>
-<rectangle x1="0.2" y1="-0.55" x2="0.5" y2="0.6" layer="21"/>
+<rectangle x1="0.1" y1="-0.6" x2="0.3" y2="0.6" layer="21"/>
+<wire x1="-0.7" y1="0.9" x2="0.7" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.9" x2="0.7" y2="-0.9" width="0.127" layer="21"/>
 </package>
 <package name="C_0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
@@ -5711,6 +5711,8 @@ Metric Code Size 2012</description>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-0.2" y1="0.7" x2="0.2" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="-0.7" x2="0.2" y2="-0.7" width="0.127" layer="21"/>
 </package>
 <package name="CRYSTAL_OSC_3.2X1.5">
 <smd name="P$1" x="1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
@@ -5733,14 +5735,16 @@ Metric Code Size 2012</description>
 <wire x1="-0.75" y1="-1.85" x2="0.75" y2="-1.85" width="0.1524" layer="21"/>
 </package>
 <package name="SOD-882">
-<smd name="P$1" x="0.575" y="0" dx="0.5" dy="0.6" layer="1"/>
-<smd name="P$2" x="-0.575" y="0" dx="0.5" dy="0.6" layer="1"/>
-<wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.127" layer="51"/>
+<smd name="P$1" x="-0.575" y="0" dx="0.5" dy="0.6" layer="1" rot="R180"/>
+<smd name="P$2" x="0.575" y="0" dx="0.5" dy="0.6" layer="1" rot="R180"/>
 <wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.127" layer="51"/>
 <wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="0.2" x2="-0.2" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.127" layer="51"/>
 <text x="-0.889" y="0.508" size="0.4064" layer="21">&gt;NAME</text>
+<rectangle x1="0.2" y1="-0.3" x2="0.3" y2="0.3" layer="21" rot="R180"/>
+<wire x1="-0.5" y1="0.35" x2="0.5" y2="0.35" width="0.05" layer="21"/>
+<wire x1="-0.5" y1="-0.35" x2="0.5" y2="-0.35" width="0.05" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6252,7 +6256,7 @@ shape!</text>
 <text x="1.546" y="-1.6" size="0.4064" layer="27" rot="R90">MCP73831</text>
 <wire x1="-1" y1="1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.127" layer="21"/>
-<circle x="-0.76" y="-1.18" radius="0.036053125" width="0.127" layer="51"/>
+<circle x="-1.2" y="-1.8" radius="0.14141875" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6385,6 +6389,7 @@ shape!</text>
 <text x="-1.55" y="1.75" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1.65" y="-2" size="0.254" layer="27">&gt;VALUE</text>
 <smd name="P$1" x="0" y="0" dx="1.6" dy="2" layer="1"/>
+<circle x="-1.2" y="1.2" radius="0.14141875" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
