@@ -130,7 +130,7 @@ Metric Code Size 2012</description>
 <rectangle x1="0.4" y1="-0.7" x2="0.6" y2="0.7" layer="21"/>
 <wire x1="-1.3" y1="0.7" x2="1.3" y2="0.7" width="0.127" layer="21"/>
 <wire x1="1.3" y1="-0.7" x2="-1.3" y2="-0.7" width="0.127" layer="21"/>
-<text x="-2" y="-1.7" size="0.8" layer="27">1N4148</text>
+<text x="-2" y="-1.7" size="0.8" layer="27">&gt;VALUE</text>
 <text x="-2.2" y="0.9" size="0.8" layer="25">&gt;NAME</text>
 </package>
 <package name="LED_0805">
