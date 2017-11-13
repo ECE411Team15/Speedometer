@@ -74,8 +74,8 @@
 <smd name="SGND" x="1.4" y="0.25" dx="0.6" dy="0.25" layer="1"/>
 <smd name="VIN" x="1.4" y="0.75" dx="0.6" dy="0.25" layer="1"/>
 <text x="-1.95" y="0.95" size="0.254" layer="21">1</text>
-<text x="-1.55" y="1.75" size="0.254" layer="25">&gt;NAME</text>
-<text x="-1.65" y="-2" size="0.254" layer="27">&gt;VALUE</text>
+<text x="-1.95" y="1.75" size="0.8" layer="25">&gt;NAME</text>
+<text x="-2.05" y="-2.6" size="0.8" layer="27">&gt;VALUE</text>
 <smd name="P$1" x="0" y="0" dx="1.6" dy="2" layer="1"/>
 <circle x="-1.2" y="1.2" radius="0.14141875" width="0.127" layer="21"/>
 </package>
