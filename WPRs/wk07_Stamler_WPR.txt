@@ -1,0 +1,21 @@
+Zach Stamler
+
+Weekly report -- Week 7
+
+DONE:
+
+- Designed and tested debounce circuit for charge inlet power defeat and tested on the bench. Added same to schematic/layout.
+- Re-oriented power reg circuit to maximize distance between the inductor and the rest of the subcircuits on board.
+- Other small optimizations on PCB.
+- Discussed case design ideas with Linyi.
+
+ISSUES:
+
+- May have to do some substantial re-pinning if Andrew and Linyi can't get all the GPIOs configured properly.
+- Need to bring up some design questions about the case with the rest of the group, especially re the placement/orientation of screen and switch.
+
+ACTION ITEMS:
+
+- Finalize layout.
+- Order remaining parts.
+- Keep track of Linyi's progress on case.

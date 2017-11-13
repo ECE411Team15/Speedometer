@@ -1,0 +1,18 @@
+Andrew Capatina
+Week of 11/8/2017
+
+1.) Refined speed conversion algorithm. Can properly calculate change in time from edge to edge.
+2.) Got button modes working via interrupts.
+3.) Finished block diagram homework assignment.
+4.) Assisted Linyi in getting the LCD to display.
+
+Next Week:
+Week of 11/15/2017
+
+1.) Get floating points and strings to display.
+2.) Finish HW6.
+3.) Begin integrating software components.
+
+Issues:
+
+1.) Need to discuss with Andrew a question regarding GPIO pins.

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -175,6 +175,16 @@ Metric Code Size 2012</description>
 <wire x1="-0.75" y1="1.85" x2="0.75" y2="1.85" width="0.1524" layer="21"/>
 <wire x1="-0.75" y1="-1.85" x2="0.75" y2="-1.85" width="0.1524" layer="21"/>
 </package>
+<package name="SOD-882">
+<smd name="P$1" x="0.575" y="0" dx="0.5" dy="0.6" layer="1"/>
+<smd name="P$2" x="-0.575" y="0" dx="0.5" dy="0.6" layer="1"/>
+<wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="0.2" x2="-0.2" y2="-0.2" width="0.127" layer="21"/>
+<text x="-0.889" y="0.508" size="0.4064" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L-US">
@@ -254,6 +264,20 @@ Metric Code Size 2012</description>
 <pin name="2" x="-5.08" y="0" visible="off" length="short"/>
 <text x="-5.08" y="5.08" size="1.778" layer="94">&gt;NAME</text>
 <text x="-5.08" y="-6.604" size="1.6764" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.397" y1="1.905" x2="1.397" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.3114" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.5654" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="1.4" y1="1.9" x2="2.1" y2="1.9" width="0.254" layer="94"/>
+<wire x1="2.1" y1="1.9" x2="2.1" y2="1.5" width="0.254" layer="94"/>
+<wire x1="1.4" y1="-1.9" x2="0.9" y2="-1.9" width="0.254" layer="94"/>
+<wire x1="0.9" y1="-1.9" x2="0.9" y2="-1.7" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -389,6 +413,23 @@ where Cs is stray capacitance from PCB</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CFSH05_SCHOTTKY" prefix="D" uservalue="yes">
+<description>schottky diode</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-882">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
