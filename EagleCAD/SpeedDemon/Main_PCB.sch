@@ -6674,6 +6674,8 @@ shape!</text>
 <part name="CONN1" library="USB_micro_jack" deviceset="USB_JACK_102-4008-1-ND_USB-MICRO-B" device=""/>
 <part name="C24" library="0805_generics" deviceset="C_0805_NP" device="" value="100nF"/>
 <part name="D4" library="LCRD_SMD_generics" deviceset="1N4148_SOD_123" device="" value="1N4148"/>
+<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6805,6 +6807,7 @@ GND</text>
 <text x="12.065" y="182.88" size="1.778" layer="97">JST-PH Connector</text>
 <text x="37" y="59.5" size="0.4064" layer="97">Debounce circuitry. Can bypass
 if voltages out of range for AND gate.</text>
+<text x="320.04" y="190.5" size="1.778" layer="97">Either pull-up or pull-dwn resistor on SWCLK is DNP</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -6962,6 +6965,8 @@ if voltages out of range for AND gate.</text>
 <attribute name="NAME" x="57.3786" y="83.9216" size="1.778" layer="95"/>
 <attribute name="VALUE" x="57.1246" y="76.7842" size="1.778" layer="96"/>
 </instance>
+<instance part="R33" gate="G$1" x="312.42" y="193.04" rot="R90"/>
+<instance part="GND27" gate="1" x="312.42" y="182.88"/>
 </instances>
 <busses>
 <bus name="LCD_4_RS,LCD_5_R/W,LCD_6_EN,LCD_7_DB0,LCD_8_DB1,LCD_9_DB2,LCD_10_DB3,LCD_11_DB4,LCD_12_DB5,LCD_13_DB6,LCD_14_DB7">
@@ -7165,8 +7170,9 @@ if voltages out of range for AND gate.</text>
 <net name="FL_SWCLK" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PA14/USART2_TX/SWCLK"/>
-<wire x1="365.76" y1="198.12" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="198.12" x2="312.42" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="312.42" y1="198.12" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="198.12" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="144.78" x2="256.54" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="231.14" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
@@ -7176,6 +7182,8 @@ if voltages out of range for AND gate.</text>
 <wire x1="365.76" y1="223.52" x2="365.76" y2="198.12" width="0.1524" layer="91"/>
 <label x="257.048" y="145.288" size="0.8128" layer="95"/>
 <label x="287.02" y="198.755" size="1.6764" layer="95"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+<junction x="312.42" y="198.12"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -7532,6 +7540,11 @@ if voltages out of range for AND gate.</text>
 <wire x1="154.94" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="109.22" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
 <junction x="154.94" y="109.22"/>
+</segment>
+<segment>
+<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="312.42" y1="185.42" x2="312.42" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
