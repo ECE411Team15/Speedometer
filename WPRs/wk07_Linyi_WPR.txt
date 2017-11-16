@@ -1,0 +1,12 @@
+Linyi HongWeekly Report Week7What I do:1)Successfully Interface the 16x2 LCD Screen with Andrew.
+2)Verified that the MCU can deal the signal come from sensor and then show the data on LCD.
+3)Start learn and build something on Solidworks preparing to doing a case.
+Issue:
+1)The sensor interrupt seems not works very well.
+2)The timer code should be verified again.
+
+Next to do:
+1)Write the User program.
+2)Prototype hardware part that related to software and verified then.
+3)Start using the 8x2 LCD.
+4)Start working on combine code together.
