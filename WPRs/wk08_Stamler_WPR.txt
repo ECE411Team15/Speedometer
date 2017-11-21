@@ -1,0 +1,24 @@
+Zach Stamler
+
+Weekly report -- Week 8
+
+DONE:
+
+- Finalized/ordered PCB, PCB Solder mask template
+- Fabricated sensor modules.
+- Ordered/received all remaining parts
+- Helped Andrew and Linyi troubleshoot electrical issues with our LCD. It initially was not working, and our backup choice wouldn't run on +3.3V. The problem turned out to be a simple grounding issue with the test setup.
+
+ISSUES:
+
+- Switch caps don't fit our switches (too big inside).
+- Sensor modules not closed off at ends/waterproofed yet.
+
+
+ACTION ITEMS:
+
+- Receive board
+- Begin test plan
+- Figure out solution for switch cap issue, likely involving lots of epoxy.
+- Figure out solution for sensor close-off, also likely involving lots of epoxy.
+- Begin bring-up procedure ASAP (probably next week, after the holiday).
