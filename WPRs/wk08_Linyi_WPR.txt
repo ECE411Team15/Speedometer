@@ -1,0 +1,16 @@
+Linyi Hong
+Weekly Report Week8
+
+What I do:
+1)Test the button connect with MCU before printing PCB.
+2)Help to interface the new OLED screen with the group.
+3)Write and fix the User program with Andrew.
+
+Issue:
+1)The User program still not friendly for user to operate, the code need to be improved.
+2)Need to verified the speed we calculate is right.
+
+Next to do:
+1)Improve the user program.
+2)Work on the PCB.
+3)Design a case for the speedometer.
