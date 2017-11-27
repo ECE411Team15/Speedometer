@@ -1,0 +1,16 @@
+Linyi Hong
+Weekly Report Week9
+
+What I do:
+1)Improved the user program.
+2)Assisted Andrew find out the reason why the sensor not works well.
+3)Build a rough case for the Speedometer
+
+Issue:
+1)The Speed that we got need to be verified.
+
+Next to do:
+1)Modified the code and add comment to it.
+2)Write the user program high level algorithm.
+3)Continue working on the case.
+4)Solder the PCB
