@@ -1,0 +1,22 @@
+Zach Stamler
+
+Weekly report -- Week 9
+
+DONE:
+
+- Took delivery of all remaining parts and supplies for board fab/assembly.
+- Helped troubleshoot sensor/board hardware issues while Andrew and Linyi worked on SW development. Kind of like phone support over the holiday.
+- Developed test plan with Nathan to use for bringing up board HW.
+- Tried to find epoxy-type solution for switch caps.
+
+ISSUES:
+
+- Switch caps still don't fit our switches, even after modification attempts.
+- Sensor modules not closed off at ends/waterproofed yet.
+
+
+ACTION ITEMS:
+
+- Begin board fab/assembly/bring-up
+- Either solve switch cap problem, find another solution, or just deal with very short-throw switches.
+- Wire up all connectors for sensor modules.
