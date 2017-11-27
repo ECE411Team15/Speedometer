@@ -1,0 +1,18 @@
+Andrew Capatina
+Week of 11/20/2017
+
+1.) Basically finished bulk of the project.
+2.) Speed conversion code is done.
+3.) User program code is done.
+4.) Debugged problems as to why we were hitting limits on our speed.
+
+Next Week: 
+Week of 11/29/2017
+
+1.) Integrate user code and speed conversion code.
+2.) Finish test plan.
+3.) Assist team in build up of PCB. 
+4.) Get project working for demo. 
+
+Issues:
+1.) Need to implement flash memory write process in code for paramaterizable wheel distance feature.
