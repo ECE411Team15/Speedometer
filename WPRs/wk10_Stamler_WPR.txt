@@ -1,0 +1,17 @@
+Zach Stamler
+
+Weekly report -- Week 9
+
+DONE:
+
+- Brought up and troubleshot the board.
+- Delivered working board, along with Nathan, to Linyi and Andrew.
+
+ISSUES:
+
+- Waiting for the case to print.
+- Our solution for switch cap is only half-working. We are pretty much stuck with it now.
+
+ACTION ITEMS:
+
+- Finish presentation, documentation. Present!
