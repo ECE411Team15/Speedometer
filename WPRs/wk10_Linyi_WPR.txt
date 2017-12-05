@@ -1,0 +1,13 @@
+Linyi Hong
+Weekly Report Week10
+
+What I do:
+1)Helped on the test cases and PCB.
+2)Done the case.
+
+Issue:
+1)Waiting for the case print, need to verified the PCB, screen and button parts can fit in the case.
+
+Next to do:
+1)Group up everything and check the speedometer works.
+2)Prepare for the presentation.
